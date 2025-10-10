@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/*********************************
+*************Animations***********
+*********************************/
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+/*********************************
+**********Home container**********
+*********************************/
+.home-container {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+/*********************************
+************Home banner***********
+*********************************/
+
+.home-banner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #545253;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.445);
+}
+
+.home-banner img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+    filter: drop-shadow(0 0 0.55rem black);
+}
+
+/*********************************
+*******Home contact section*******
+*********************************/
+
+.home-contact-section {
+    margin-top:100px;
+    margin-bottom:100px;
+    text-align: center;
+    background-color: #eeede9;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+
+.home-contact-section h1 {
+    color: #fd7d13;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.home-contact-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#home-contact-section-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px auto 0;
+    background: linear-gradient(180deg, #fd7d13, #ffb347);
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+    width: fit-content;
+}
+
+#home-contact-section-btn:hover {
+    background: linear-gradient(180deg, #ff9100, #ffc266);
+    transform: translateY(-2px);
+}
+
+/*********************************
+************Home intro************
+*********************************/
+
+.home-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    min-height: 60vh;
+}
+
+.home-intro-left-side{
+    position: relative;
+    overflow: hidden;
+    border-right: 3px solid #fd7d13;
+}
+
+.home-intro-left-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.home-intro-right-side{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align:justify;
+    padding: 150px;
+    background-color: #eeede9;
+    border-left: 3px solid #fd7d13;
+}
+
+.home-intro-right-side h2{
+    color: #fd7d13;
+    margin-bottom:50px;
+    font-size:1.6rem;
+}
+
+.home-intro-right-side p{
+    font-size:1.2rem;
+    width:80%;
+    margin-bottom:10px;
+}
+
+/*********************************
+*********Geographic zone**********
+*********************************/
+.home-zone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: 60vh;
+}
+
+.home-zone-right {
+    position: relative;
+    overflow: hidden;
+    border-left: 3px solid #fd7d13;
+    
+}
+
+.home-zone-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.home-zone-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 150px;
+    background-color: #eeede9;
+    border-right: 3px solid #fd7d13;
+}
+
+.home-zone-left h2 {
+    color: #fd7d13;
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+}
+
+.home-zone-left p {
+    font-size: 1.2rem;
+    width: 85%;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+/********************************************
+********Services & Benefits section**********
+********************************************/
+.home-services-section {
+    margin-top:60px;
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #eeede9;
+    text-align: center;
+}
+
+.home-services-title {
+    font-size: 2rem;
+    color: #fd7d13;
+    margin-bottom: 40px;
+}
+
+.home-services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    min-width: 200px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card h3 {
+    color: #fd7d13;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+#home-services-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #fd7d13, #ffb347);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#home-services-button:hover {
+    background: linear-gradient(180deg, #ff9100, #ffc266);
+    transform: translateY(-2px);
+}
+
+/*********************************
+****** Responsive Rules **********
+*********************************/
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .home-banner {
+        height: 45vh;
+    }
+
+    .home-banner img {
+        width: 100%;
+        object-position: center;
+    }
+
+    .home-contact-section {
+        margin: 60px 20px;
+        padding: 20px;
+    }
+
+    .home-contact-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-contact-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .home-intro,
+    .home-zone {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .home-intro-right-side,
+    .home-zone-left {
+        padding: 60px 40px;
+        text-align: center;
+    }
+
+    .home-intro-right-side h2,
+    .home-zone-left h2 {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+    }
+
+    .home-intro-right-side p,
+    .home-zone-left p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .home-services-title {
+        font-size: 1.6rem;
+    }
+
+    .service-card {
+        min-width: 180px;
+        max-width: 220px;
+        padding: 20px 15px;
+    }
+}
+
+/* Tablets landscape */
+@media (max-width: 1500px) and (orientation: landscape) {
+    .home-banner {
+        height: 50vh;
+    }
+
+    .home-banner img {
+        width: 80%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .home-contact-section {
+        margin: 60px auto;
+        padding: 20px 25px;
+        max-width: 1000px;
+    }
+
+    .home-contact-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-contact-section h2 {
+        font-size: 1.2rem;
+    }
+
+    #home-contact-section-btn {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+
+    .home-intro-right-side,
+    .home-zone-left {
+        padding: 80px;
+    }
+
+    .home-intro-right-side h2,
+    .home-zone-left h2 {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+    }
+
+    .home-intro-right-side p,
+    .home-zone-left p {
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 90%;
+    }
+
+    .home-intro-left-side img,
+    .home-zone-right img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .home-services-section {
+        padding: 40px 30px;
+    }
+
+    .home-services-title {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .home-services-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .service-card {
+        min-width: 180px;
+        max-width: 220px;
+        padding: 20px 15px;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
+
+    #home-services-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-top: 25px;
+    }
+}
+
+/* Mobile*/
+@media (max-width: 599px) {
+    .home-banner {
+        height: 30vh;
+    }
+
+    .home-banner img {
+        width: 100%;
+    }
+
+    .home-contact-section {
+        margin: 40px 10px;
+        padding: 15px;
+    }
+
+    .home-contact-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-contact-section h2 {
+        font-size: 1rem;
+    }
+
+    #home-contact-section-btn {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    .home-intro,
+    .home-zone {
+        grid-template-columns: 1fr;
+    }
+
+    .home-intro-right-side,
+    .home-zone-left {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .home-intro-right-side h2,
+    .home-zone-left h2 {
+        font-size: 1.2rem;
+    }
+
+    .home-intro-right-side p,
+    .home-zone-left p {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .home-services-title {
+        font-size: 1.4rem;
+    }
+
+    .home-services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+/* MOBILE LANDSCAPE */
+@media (max-width: 899px) and (orientation: landscape) {
+    .home-banner {
+        height: 100%;
+    }  
+
+    .home-intro,
+    .home-zone {
+        grid-template-columns: 1fr 1fr;
+        min-height: auto;
+    }
+
+    .home-intro-left-side img,
+    .home-zone-right img {
+        object-fit: contain;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .home-intro-right-side,
+    .home-zone-left {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .home-intro-right-side h2,
+    .home-zone-left h2 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .home-intro-right-side p,
+    .home-zone-left p {
+        font-size: 0.85rem;
+        width: 100%;
+        line-height: 1.4;
+    }
+
+    .service-card {
+        min-width: 160px;
+        max-width: 200px;
+        padding: 15px;
+    }
+
+    .home-contact-section {
+        margin: 40px auto;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .home-contact-section h1 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    .home-contact-section h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    #home-contact-section-btn {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    .home-services-section {
+        padding: 30px 15px;
+        margin-top: 30px;
+        
+    }
+
+    .home-services-title {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .home-services-cards {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .service-card {
+        min-width: 140px;
+        max-width: 180px;
+        padding: 12px 10px;
+    }
+
+    .service-card h3 {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .service-card p {
+        font-size: 0.8rem;
+    }
+
+    #home-services-button {
+        margin-top: 20px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
