@@ -86,6 +86,30 @@ function Legal() {
                         de limitation et d’opposition. Pour exercer vos droits, merci de nous contacter via la page <NavLink to="/contact" content="Contact" id=""/>.
                     </p>
 
+                </div>   
+            </div>
+
+            {/* Hosting and credits part */}
+            <div className="hosting-section">
+                <h2>Hébergement et crédits</h2>
+                <div className="hosting-section-text">
+                    
+
+                    <h3>Hébergement du site :</h3>
+                    <p>
+                        Le site est hébergé par <strong>GitHub Pages</strong> (<a href="https://github.com/">GitHub</a>, Inc.),  
+                        dont le siège social est établi : <strong>88 Colin P. Kelly Jr Street, San Francisco, CA 94107, États-Unis.</strong>
+                    </p>
+
+
+                    <p>
+                        Le nom de domaine <a href="https://www.depan-auto-62.fr">www.depan-auto-62.fr</a> est enregistré et géré par <a href="https://www.ovhcloud.com/fr/">OVHcloud</a>, dont le siège social est établi : <strong>2 rue Kellermann, 59100 Roubaix, France.</strong>
+                    </p>
+
+                    <h3>Conception et développement :</h3>
+                    <p>Jovany Hochart — Développeur web indépendant</p>
+                    <p><strong>Liens de contact :</strong></p>
+                    <p><a href="mailto:jovanyhochart@gmail.com">Envoyer un mail</a> | <a href="https://github.com/JHochart0">Lien GitHub</a> | <a href="https://www.linkedin.com/in/jovany-hochart-414a5a289/">Lien LinkedIn</a></p>
                 </div>
             </div>
         </div>
