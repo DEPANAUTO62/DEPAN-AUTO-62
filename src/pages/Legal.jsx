@@ -93,14 +93,12 @@ function Legal() {
             <div className="hosting-section">
                 <h2>Hébergement et crédits</h2>
                 <div className="hosting-section-text">
-                    
 
                     <h3>Hébergement du site :</h3>
                     <p>
                         Le site est hébergé par <strong>GitHub Pages</strong> (<a href="https://github.com/">GitHub</a>, Inc.),  
                         dont le siège social est établi : <strong>88 Colin P. Kelly Jr Street, San Francisco, CA 94107, États-Unis.</strong>
                     </p>
-
 
                     <p>
                         Le nom de domaine <a href="https://www.depan-auto-62.fr">www.depan-auto-62.fr</a> est enregistré et géré par <a href="https://www.ovhcloud.com/fr/">OVHcloud</a>, dont le siège social est établi : <strong>2 rue Kellermann, 59100 Roubaix, France.</strong>

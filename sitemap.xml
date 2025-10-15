@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://depan-auto-62.fr/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://depan-auto-62.fr/#/contact</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://depan-auto-62.fr/#/services</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://depan-auto-62.fr/#/photos</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://depan-auto-62.fr/#/legal</loc>
+    <priority>0.3</priority>
+  </url>
+</urlset>
