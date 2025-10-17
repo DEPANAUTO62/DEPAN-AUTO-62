@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './css/App.css'
 
@@ -19,7 +19,7 @@ import NotFound404 from "./pages/NotFound404.jsx";
 
 function App() {
     return (
-        <Router>
+        <Router basename="/">
             <ScrollToTop />
             <div className="App">
                 <Header />
