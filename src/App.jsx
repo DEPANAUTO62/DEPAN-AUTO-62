@@ -18,6 +18,13 @@ import Legal from "./pages/Legal.jsx";
 import NotFound404 from "./pages/NotFound404.jsx";
 
 function App() {
+
+    // correction 404
+    if (sessionStorage.getItem("redirect")) {
+    const redirect = sessionStorage.getItem("redirect");
+    sessionStorage.removeItem("redirect");
+    window.history.replaceState(null, "", redirect);
+    }
     return (
         <Router basename="/">
             <ScrollToTop />
